@@ -1,12 +1,14 @@
+//#include "mainwindow.h"
+
 #include <QApplication>
-#include <QMainWindow>
-//#include <QGuiApplication>
+#include <QWidget>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QMainWindow w;
+    QWidget w;
     w.show();
+    qApp->dumpObjectTree();
+    qApp->dumpObjectInfo();
     return a.exec();
 }
-
