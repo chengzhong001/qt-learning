@@ -2,6 +2,7 @@
 #define MYCLASS_H
 
 #include <QObject>
+#include <QDebug>
 
 class MyClass : public QObject
 {
@@ -12,6 +13,7 @@ class MyClass : public QObject
 
 public:
 //    explicit MyClass(QObject *parent = nullptr);
+    ~MyClass(){qDebug() << "~Myclass";}
     enum Priority{High, Low, VeryHigh, VeryLow};
     Q_ENUM(Priority)
 
