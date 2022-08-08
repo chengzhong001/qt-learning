@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/向上.png</file>
+        <file>resources/向上.svg</file>
+        <file>resources/向下.png</file>
+        <file>resources/logo.icns</file>
+        <file>resources/up.png</file>
+        <file>resources/down.png</file>
+        <file>resources/up.bmp</file>
+    </qresource>
+</RCC>

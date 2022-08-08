@@ -3,6 +3,7 @@
 #include <QGridLayout>
 #include <QPushButton>
 #include <QApplication>
+#include <QSpinBox>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -29,6 +30,9 @@ Widget::Widget(QWidget *parent)
     QPushButton *btn = new QPushButton("quit", this);
     gridframe2->addWidget(btn);
     connect(btn, &QPushButton::clicked, qApp, &QApplication::quit);
+    
+    QSpinBox *spinbox = new QSpinBox(this);
+    gridframe2->addWidget(spinbox);
     this->dumpObjectTree();
 
 }

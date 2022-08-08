@@ -1,0 +1,21 @@
+QWidget {
+    background-color: rgb(79, 79, 79);
+    color: rgb(235, 235, 235);
+    font: 12px "新宋体";
+}
+
+/* QSpinBox::down-button { image: url(:/resources/down.png);}
+QSpinBox::up-button { image: url(:/resources/up.bmp);} */
+
+QPushButton:hover {
+    background-color: black;
+    color: yellow;
+}
+
+QPushButton {
+    min-width: 60px;
+    min-height: 60px;
+    padding: 0px, 10px, 0px, 10px;
+    border: 10px groove red;
+    border-radius: 30;
+}

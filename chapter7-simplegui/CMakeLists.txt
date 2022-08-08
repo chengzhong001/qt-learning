@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         main.cpp
         widget.cpp
         widget.h
+        res.qrc
 #        itunes-256.ico
 )
 
