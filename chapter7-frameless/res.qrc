@@ -1,2 +1,8 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>button.png</file>
+        <file>logo.png</file>
+        <file>mtbutton.png</file>
+        <file>radio.png</file>
+    </qresource>
+</RCC>
