@@ -16,7 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-)
+        )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(chapter1widget
@@ -58,3 +58,6 @@ install(TARGETS chapter1widget
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(chapter1widget)
 endif()
+
+add_executable(main main.cpp)
+add_executable(test test.cpp)

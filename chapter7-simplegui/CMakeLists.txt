@@ -26,13 +26,17 @@ set(MACOSX_BUNDLE_ICON_FILE logo.icns)
 set(app_icon_macos "${CMAKE_CURRENT_SOURCE_DIR}/resources/logo.icns")
 set_source_files_properties(${app_icon_macos} PROPERTIES
             MACOSX_PACKAGE_LOCATION "Resources")
+            
+set_source_files_properties(${app_icon_macos} PROPERTIES
+        MACOSX_PACKAGE_LOCATION "Resources")
 
 # qt_add_executable(logo MACOSX_BUNDLE main.cpp ${app_icon_macos})
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(chapter7-simplegui
+    qt_add_executable(chapter7-simplegui MACOSX_BUNDLE
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        ${app_icon_macos}
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET chapter7-simplegui APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

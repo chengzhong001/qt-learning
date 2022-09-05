@@ -58,3 +58,8 @@ install(TARGETS chapter1gui
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(chapter1gui)
 endif()
+
+add_executable(CMakeLists CMakeLists.txt)
+add_executable(main main.cpp)
+add_executable(chapter1-gui )
+add_executable(chapter1-gui )

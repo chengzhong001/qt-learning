@@ -23,7 +23,7 @@ Widget::Widget(QWidget *parent)
     auto *grid = new QGridLayout(this);
     grid->addWidget(frame1, 0, 0);
     grid->addWidget(frame2, 0, 1);
-    grid->addWidget(frame3, 0, 3);
+    grid->addWidget(frame3, 0, 2);
     // setLayout(grid);
 
     auto *gridframe2 = new QGridLayout(frame2);
