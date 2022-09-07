@@ -5,7 +5,7 @@ QWidget {
 }
 
 /* QSpinBox::down-button { image: url(:/resources/down.png);}
-QSpinBox::up-button { image: url(:/resources/up.bmp);} */
+QSpinBox::up-button { image: url(:/resources/up.bmp);}  */
 
 QPushButton:hover {
     background-color: black;
