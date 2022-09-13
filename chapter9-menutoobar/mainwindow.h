@@ -10,5 +10,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+
+    void toggleStatusbar();
+
+
+private:
+    QAction *status;
 };
+
 #endif // MAINWINDOW_H
