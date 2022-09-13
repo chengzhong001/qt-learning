@@ -39,6 +39,19 @@ MainWindow::MainWindow(QWidget *parent)
     file->addAction(quit);
     file->addAction(status);
 
+    // 主窗口添加横向状态栏, 这个状态下setStatusTip才会生效
+    QToolBar * toolbar = addToolBar("主菜单");
+    toolbar->addAction(newa);
+    toolbar->addAction(open);
+    toolbar->addSeparator();
+    toolbar->addAction(quit);
+    toolbar->addAction(status);
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+
+    statusBar()->showMessage("已就绪");
+    auto *edit = new QTextEdit(this);
+    setCentralWidget(edit);
+
     connect(quit, &QAction::triggered, qApp, QApplication::quit);
 
     statusBar();
